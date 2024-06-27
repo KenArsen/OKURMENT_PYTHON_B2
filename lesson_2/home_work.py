@@ -9,3 +9,5 @@ Asan Bakirov siz 24 jashtasyz!
 фамилиябызды Bakirov жана жашыбызды 24
 деп жазган болсок
 '''
+
+print(name, surname, "siz", age, "jashtasyz!")
