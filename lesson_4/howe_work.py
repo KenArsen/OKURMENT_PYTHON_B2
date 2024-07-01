@@ -7,6 +7,8 @@ Python is fun! деген текст берилсе
 Жоопко:
 14 деп чыгыш керек
 '''
+text = input("Text: ")
+print(len(text))
 
 
 # 2 - тапшырма
@@ -26,9 +28,12 @@ Osh
 Жоопко:
 NO
 '''
+text_1 = input("text 1: ")
+text_2 = input("text_2: ")
+a = text_2 in text_1
+print(a)
 
 
-print(ord("n"), ord("s"))
 # 3 - тапшырма
 '''
 Бизге консольдон эки текст берилет,
@@ -48,3 +53,9 @@ Bishkek
 1
 Тушундурмо: Анткени Batken Bishkek тен чон(i чон a дан)
 '''
+
+
+text_1 = input("text 1: ")
+text_2 = input("text_2: ")
+result = text_1 > text_2
+print(result)
