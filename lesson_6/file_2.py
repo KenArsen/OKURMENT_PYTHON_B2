@@ -1,7 +1,6 @@
-# message = input()
-# print(message.upper())
-# print(message.lower())
-
-timur = input("TIMUR: ")
-arsen = input("ARSEN: ")
-baiel = input("BAIEL: ")
+message = "Aibarchyn"
+age = 19
+print(message)
+print(age)
+print(message.upper())
+print(message.lower())
