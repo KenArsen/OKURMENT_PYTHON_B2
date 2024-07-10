@@ -20,6 +20,18 @@
 2 + 3 + 2 + 7 бул сандар он сандар
 
 """
+summa = 0
+while True:
+    number = int(input("Введите одно число: "))
+
+    if number == 0:
+        break
+    elif number < 0:
+        continue
+    else:
+        summa += number
+
+print(f'Сумма = {summa}')
 
 
 # 2 - тапшырма
@@ -40,3 +52,9 @@
 3 ** 2 = 9
 4 ** 2 = 16 эн биринчи сан, квадраты ондон чон
 """
+
+number = int(input("Введите одно число: ")) # 100
+i = 1 
+while number > i ** 2: # 100 > 10 ** 2 -> False
+    i += 1 # i = 10
+print(i)
