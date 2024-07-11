@@ -13,6 +13,12 @@ Bishkek Naryn Talas Osh Chui Jala-Abad
 Bishkek Naryn Talas Jala-Abad
 """
 
+citites = [city for city in input().split()]
+for city in citites:
+    if len(city) >= 5:
+        print(city, end=' ')
+print()
+
 
 # 2 - тапшырма
 """
@@ -28,8 +34,16 @@ Bishkek Naryn Talas Jala-Abad
 ['он', 'терс', 'терс', 'он', 'он', 'он']
 """
 
+numbers = [int(i) for i in input().split()]
+result = []
+for number in numbers:
+    if number > 0:
+        result.append("+")
+    else:
+        result.append("-")
+print(result)
 
-# 2 - тапшырма
+# 3 - тапшырма
 """
 Программага бир сан киргизилет.
 Сиздер ошол сандын жадыбалын(таблица умножение) чыгарышыздар керек.
@@ -49,3 +63,7 @@ Bishkek Naryn Talas Jala-Abad
 4 * 9 == 36
 4 * 10 == 40
 """
+
+n = int(input("n: "))
+for i in range(1, 11):
+    print(f"{n} * {i} = {n * i}")
