@@ -14,4 +14,17 @@
 {"-3": "-", "-5": "-", "2": "+", "7": "+", "3": "+", "-4": "-"}
 """
 
+# result = dict()
+result = {}
+
+numbers = [int(i) for i in input().split()]
+
+for number in numbers:
+    if number < 0:
+        result[number] = "-"
+    else:
+        result[number] = "+"
+
+print(result)
+
 
