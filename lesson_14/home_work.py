@@ -14,6 +14,15 @@
 3
 """
 
+res = set()
+while True:
+    city = input("Ввдетите имя города: ")
+    if city == "q":
+        break
+    else:
+        res.add(city)
+print(len(res))
+
 """
 Программага эки сапка эки список берилет.
 Ал эки списоктун ичинен уникальный элементтерди алып,
@@ -30,3 +39,13 @@
 биринчи списокто гана бар элементтер: 1 2 3
 экинчп списокто гана бар элементтер: 6 7 8 
 """
+
+nums_1 = [int(i) for i in input().split()]
+nums_2 = [int(i) for i in input().split()]
+
+nums_set_1 = set(nums_1)
+nums_set_2 = set(nums_2)
+
+print("экоондо тен бар элементтер:", nums_set_1 & nums_set_2)
+print("биринчи списокто гана бар элементтер:", nums_set_1 - nums_set_2)
+print("экинчп списокто гана бар элементтер:", nums_set_2 - nums_set_1)
