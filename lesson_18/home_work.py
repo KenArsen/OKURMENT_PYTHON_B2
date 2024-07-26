@@ -7,8 +7,12 @@
 """
 
 def get_count(func):
+    count = 1
     def wrapper():
-        pass
+        nonlocal count
+        print(f"Функция {func.__name__} {count} жолу чакырылды.")
+        func()
+        count += 1
     return wrapper
 
 
@@ -21,6 +25,8 @@ def welcome():
     print("Кош келиниз!")
 
 
+hello()
+hello()
 hello()
 hello()
 welcome()
