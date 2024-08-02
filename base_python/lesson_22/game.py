@@ -1,8 +1,8 @@
 import random
 
 
-def get_random_number():
-    return random.randint(1, 10)
+def get_random_number(n=1, m=10):
+    return random.randint(n, m)
 
 
 def check(com_n, per_n):
@@ -11,6 +11,9 @@ def check(com_n, per_n):
 
 def main():
     s = 1
+    print("1) Set diapozo")
+    n, m = map(int, input("n, m: ").split())
+
     comp_number = get_random_number()
     while True and s <= 3:
         person_number = int(input("Введите одно число: "))
